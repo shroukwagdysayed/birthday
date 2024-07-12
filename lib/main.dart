@@ -1,17 +1,24 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const BirthDayCardApp());
+  runApp(BirthdayCard());
 }
 
-class BirthDayCardApp extends StatelessWidget {
-  const BirthDayCardApp({super.key});
-
+class BirthdayCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(),
       debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        backgroundColor: Color(0xFFD2BCD5),
+        body: Center(
+          child: Image(
+            image: AssetImage(
+              'images/image.png',
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
